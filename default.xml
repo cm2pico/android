@@ -8,7 +8,10 @@
            fetch="git://github.com/Evervolv/"
 	   review="review.evervolv.com"/>
 
-  <remote  name="cm"
+  <remote name="pico"
+           fetch="git://github.com/sakindia123/" />
+	   
+    <remote  name="cm"
            fetch="git://github.com/CyanogenMod/" 
            review="review.cyanogenmod.com" />
 
@@ -31,17 +34,7 @@
   <project path="device/generic/goldfish" name="device/generic/goldfish" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" />
-  <project path="device/moto/common" name="device/moto/common" />
-  <project path="device/moto/stingray" name="device/moto/stingray"/>
-  <project path="device/moto/wingray" name="device/moto/wingray"/>
   <project path="device/sample" name="device/sample" />
-  <project path="device/samsung/crespo" name="android_device_samsung_crespo" remote="github" revision="ics" />
-  <project path="device/samsung/crespo4g" name="android_device_samsung_crespo4g" remote="github" revision="ics" />
-  <project path="device/samsung/maguro" name="android_device_samsung_maguro" remote="github" revision="ics"/>
-  <project path="device/samsung/torospr" name="android_device_samsung_torospr" remote="github" revision="ics"/>
-  <project path="device/samsung/toro" name="android_device_samsung_toro" remote="github" revision="ics"/>
-  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="github" revision="ics"/>
-  <project path="device/ti/panda" name="android_device_ti_panda" remote="github" revision="ics"/>
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/android-mock" name="platform/external/android-mock" />
   <project path="external/antlr" name="platform/external/antlr" />
@@ -194,10 +187,6 @@
   <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="github" revision="ics" />
   <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="github" revision="ics" />
   <project path="hardware/ril" name="android_hardware_ril" remote="github" revision="ics" />
-  <project path="hardware/samsung" name="android_hardware_samsung" remote="github" revision="ics"/>
-  <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
-  <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" />
-  <project path="hardware/ti/wlan" name="android_hardware_ti_wlan" remote="github" revision="ics"/>
   <project path="libcore" name="android_libcore" remote="github" revision="ics"/>
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
@@ -269,43 +258,18 @@
   <project path="system/wlan/ti" name="android_system_wlan_ti" remote="github" revision="ics"/>
   <project path="system/wlan/atheros" name="android_system_wlan_atheros" remote="github" revision="ics"/>
   <project path="android" name="android" remote="github" revision="ics"/>
-  <project path="device/hp/tenderloin" name="android_device_hp_tenderloin" remote="github" revision="ics"/>
-  <project path="device/htc/msm7x30-common" name="android_device_htc_msm7x30-common" remote="github" revision="ics"/>
-  <project path="device/htc/msm8660-common" name="android_device_htc_msm8660-common" remote="github" revision="ics"/>
-  <project path="device/htc/msm8960-common" name="android_device_htc_msm8960-common" remote="github" revision="ics"/>
-  <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="github" revision="ics"/>
-  <project path="device/htc/bravo" name="android_device_htc_bravo" remote="github" revision="ics" />
   <project path="device/htc/common" name="android_device_htc_common" remote="github" revision="ics"/>
-  <project path="device/htc/desirec" name="android_device_htc_desirec" remote="github" revision="ics"/>
-  <project path="device/htc/evita" name="android_device_htc_evita" remote="github" revision="ics"/>
-  <project path="device/htc/heroc" name="android_device_htc_heroc" remote="github" revision="ics"/>
-  <project path="device/htc/inc" name="android_device_htc_inc" remote="github" revision="ics"/>
-  <project path="device/htc/jewel" name="android_device_htc_jewel" remote="github" revision="ics"/>
-  <project path="device/htc/kingdom" name="android_device_htc_kingdom" remote="github" revision="ics"/>
-  <project path="device/htc/mecha" name="android_device_htc_mecha" remote="github" revision="ics"/>
-  <project path="device/htc/passion" name="android_device_htc_passion" remote="github" revision="ics"/>
-  <project path="device/htc/pyramid" name="android_device_htc_pyramid" remote="github" revision="ics"/>
-  <project path="device/htc/ruby" name="android_device_htc_ruby" remote="github" revision="ics"/>
-  <project path="device/htc/shooter" name="android_device_htc_shooter" remote="github" revision="ics"/>
-  <project path="device/htc/speedy" name="android_device_htc_speedy" remote="github" revision="ics"/>
-  <project path="device/htc/supersonic" name="android_device_htc_supersonic" remote="github" revision="ics"/>
-  <project path="device/htc/vivow" name="android_device_htc_vivow" remote="github" revision="ics"/>
-  <project path="device/lge/thundercls670" name="android_device_lge_thundercls670" remote="github" revision="ics"/>
-  <project path="device/samsung/c1-common" name="android_device_samsung_c1-common" remote="github" revision="ics" />
-  <project path="device/samsung/epic4gtouch" name="android_device_samsung_epic4gtouch" remote="github" revision="ics" />
-  <project path="device/samsung/skyrocket" name="android_device_samsung_skyrocket" remote="github" revision="ics" />
+  <project path="device/htc/pico" name="evervolv-pico" remote="pico" revision="master"/>
+  <project path="vendor/htc/pico" name="ics-vendor-pico" remote="pico" revision="ics"/>
   <project path="packages/apps/AndroidTerm" name="android_packages_apps_AndroidTerm" remote="github" revision="ics"/>
   <project path="packages/apps/Superuser" name="android_packages_apps_Superuser" remote="github" revision="ics"/>
   <project path="vendor/ev" name="android_vendor_ev" remote="github" revision="ics"/>
-  <project path="vendor/hp" name="android_vendor_hp" remote="github" revision="ics"/>
   <project path="vendor/htc" name="android_vendor_htc" remote="github" revision="ics"/>
-  <project path="vendor/lge" name="android_vendor_lge" remote="github" revision="ics"/>
   <project path="vendor/qcom/opensource/kernel-tests/mm-audio" name="android_vendor_qcom_opensource_kernel-tests_mm-audio" remote="github" revision="ics" />
   <project path="vendor/qcom/opensource/omx/mm-core" name="android_vendor_qcom_opensource_omx_mm-core" remote="github" revision="ics" />
   <project path="vendor/qcom/opensource/omx/mm-video" name="android_vendor_qcom_opensource_omx_mm-video" remote="github" revision="ics" />
   <project path="vendor/qcom/opensource/v8" name="android_vendor_qcom_opensource_v8" remote="github" revision="ics"/>
-  <project path="vendor/samsung" name="android_vendor_samsung" remote="github" revision="ics"/>
-
+ 
   <project path="vendor/tmobile/products/themes" name="themes-platform-vendor-tmobile-products-themes" remote="github" revision="ics"/>
   <project path="vendor/tmobile/apps/ThemeChooser" name="themes-platform-vendor-tmobile-apps-ThemeChooser" remote="github" revision="ics" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="themes-platform-vendor-tmobile-libs-com.tmobile.themes" remote="github" revision="ics"/>
