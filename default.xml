@@ -56,7 +56,7 @@
   <project path="frameworks/base" name="android_frameworks_base" remote="github" revision="jellybean"/>
   <project path="frameworks/native" name="android_frameworks_native" remote="github" revision="jellybean"/>
   <project path="frameworks/rs" name="android_frameworks_rs" remote="github" revision="jellybean"/>
-  <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" remote="cm" revision="jellybean"/>
+  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="cm" revision="jellybean"/>
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="github" revision="jellybean"/>
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="github" revision="jellybean"/>
   <project path="hardware/msm7k" name="android_hardware_msm7k" remote="github" revision="jellybean"/>
