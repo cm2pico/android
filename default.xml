@@ -7,6 +7,10 @@
   <remote  name="github"
            fetch="git://github.com/Evervolv/"
            review="review.evervolv.com"/>
+  <remote name="pico"
+           fetch="git://github.com/sakindia123/" />
+  <remote name="cm"
+           fetch="git://github.com/CyanogenMod/" />         
   <default revision="refs/tags/android-4.1.1_r4"
            remote="aosp"
            sync-j="4" />
@@ -23,6 +27,8 @@
   <project path="device/samsung/toro" name="android_device_samsung_toro" remote="github" revision="jellybean"/>
   <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="github" revision="jellybean"/>
   <project path="device/ti/panda" name="android_device_ti_panda" remote="github" revision="jellybean"/>
+  <project path="device/htc/pico" name="ev-jb-pico" remote="pico" revision="master"/>
+  <project path="vendor/htc/pico" name="ics-vendor-pico" remote="pico" revision="master"/>
   <project path="external/aac" name="android_external_aac" remote="github" revision="jellybean"/>
   <project path="external/bluetooth/bluez" name="android_external_bluetooth_bluez" remote="github" revision="jellybean"/>
   <project path="external/compat-wireless-3.5-rc3-1-sn" name="android_external_compat-wireless-3.5-rc3-1-sn" remote="github" revision="jellybean" />
@@ -42,15 +48,15 @@
   <project path="external/v8" name="android_external_v8" remote="github" revision="jellybean"/>
   <project path="external/webkit" name="android_external_webkit" remote="github" revision="jellybean"/>
   <project path="external/webrtc" name="android_external_webrtc" remote="github" revision="jellybean"/>
-  <project path="external/wpa_supplicant_6" name="android_external_wpa_supplicant_6" remote="github" revision="jellybean"/>
-  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="github" revision="jellybean"/>
+  <project path="external/wpa_supplicant_6" name="android_external_wpa_supplicant_6" remote="cm" revision="jellybean"/>
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="cm" revision="jellybean"/>
   <project path="external/yaffs2" name="android_external_yaffs2" remote="github" revision="jellybean"/>
   <project path="external/zlib" name="android_external_zlib" remote="github" revision="jellybean"/>
   <project path="frameworks/av" name="android_frameworks_av" remote="github" revision="jellybean"/>
   <project path="frameworks/base" name="android_frameworks_base" remote="github" revision="jellybean"/>
   <project path="frameworks/native" name="android_frameworks_native" remote="github" revision="jellybean"/>
   <project path="frameworks/rs" name="android_frameworks_rs" remote="github" revision="jellybean"/>
-  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="github" revision="jellybean"/>
+  <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" remote="cm" revision="jellybean"/>
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="github" revision="jellybean"/>
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="github" revision="jellybean"/>
   <project path="hardware/msm7k" name="android_hardware_msm7k" remote="github" revision="jellybean"/>
@@ -127,7 +133,6 @@
   <project path="system/wlan/ti" name="android_system_wlan_ti" remote="github" revision="jellybean"/>
   <project path="vendor/asus" name="android_vendor_asus" remote="github" revision="jellybean"/>
   <project path="vendor/ev" name="android_vendor_ev" remote="github" revision="jellybean" />
-  <project path="vendor/hp" name="android_vendor_hp" remote="github" revision="jellybean" />
   <project path="vendor/htc" name="android_vendor_htc" remote="github" revision="jellybean" />
   <project path="vendor/samsung" name="android_vendor_samsung" remote="github" revision="jellybean"/>
 
